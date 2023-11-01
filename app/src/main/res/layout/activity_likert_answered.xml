@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LikertAnswered">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+
+        <View
+            android:id="@+id/rectangle_2"
+            android:layout_width="319dp"
+            android:layout_height="510dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="83dp"
+            android:background="@drawable/db_card_rectangle_likert" />
+
+        <View
+            android:id="@+id/rectangle2_likert"
+            android:layout_width="7dp"
+            android:layout_height="476dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="103dp"
+            android:background="@drawable/db_border_side" />
+
+        <ImageView
+            android:id="@+id/image_35"
+            android:layout_width="211dp"
+            android:layout_height="121dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp"
+            android:background="@mipmap/img_likert_respondido" />
+
+        <TextView
+            android:id="@+id/obrigado_a_"
+            android:layout_width="234dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/image_35"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="43dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/txt_tks_avaliable1"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txt_tks"
+            android:layout_width="220dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/obrigado_a_"
+            android:layout_marginStart="106dp"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:text="@string/txt_tks_avaliable2" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_go_quiz"
+            style="@style/style_btnYellowSmall"
+            android:layout_below="@+id/txt_tks"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/db_btn_solid"
+            android:text="@string/txt_access_certificate"
+            android:textColor="@color/black"
+            android:textSize="9sp"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_back"
+            style="@style/style_btnBorderPurpleSmall"
+            android:layout_below="@+id/btn_go_quiz"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="6.03dp"
+            android:background="@drawable/db_btn_border"
+            android:text="@string/txt_back_start"
+            android:textColor="@color/black"
+            android:textSize="9sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/fg_menu"
+        class="com.educa.ui.fragments.FragmentMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Quiz">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="630dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/db_card_rectangle_likert"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/quiz_t_tulo"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="60dp"
+                        android:layout_marginTop="30dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="@string/txt_quiz"
+                        android:textColor="#9813E1"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/quiz_title"
+                        android:layout_width="243dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="34dp"
+                        android:layout_toEndOf="@id/quiz_t_tulo"
+                        android:fontFamily="@font/montserrat"
+                        android:text="@string/txt_title_conteudo"
+                        android:textColor="#000000"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/lorem_ipsum"
+                        android:layout_width="255dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/quiz_title"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="40dp"
+                        android:text="@string/txt_questionOne"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_roundedOne"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_below="@id/lorem_ipsum"
+                        android:layout_marginStart="55dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/checkbox_rounded"
+                        android:button="@null" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_roundedTwo"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_below="@id/checkbox_roundedOne"
+                        android:layout_marginStart="55dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/checkbox_rounded"
+                        android:button="@null" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_roundedTree"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_below="@id/checkbox_roundedTwo"
+                        android:layout_marginStart="55dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/checkbox_rounded"
+                        android:button="@null" />
+
+                    <TextView
+                        android:id="@+id/lorem_ipsumTwo"
+                        android:layout_width="255dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/checkbox_roundedTree"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/txt_questionTwo"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_roundedFor"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_below="@id/lorem_ipsumTwo"
+                        android:layout_marginStart="55dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/checkbox_rounded"
+                        android:button="@null" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_roundedFive"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_below="@id/checkbox_roundedFor"
+                        android:layout_marginStart="55dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/checkbox_rounded"
+                        android:button="@null" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_roundedSix"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_below="@id/checkbox_roundedFive"
+                        android:layout_marginStart="55dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/checkbox_rounded"
+                        android:button="@null" />
+
+                    <TextView
+                        android:id="@+id/lorem_ipsumTree"
+                        android:layout_width="255dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/checkbox_roundedSix"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/txt_questionTree"
+                        android:textSize="16sp" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ipt_question"
+                        style="@style/style_ipt"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/lorem_ipsumTree"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/db_input"
+                        android:inputType="text" />
+
+                    <TextView
+                        android:id="@+id/lorem_ipsumFor"
+                        android:layout_width="255dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ipt_question"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/txt_questionFor"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_roundedSeven"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_below="@id/lorem_ipsumFor"
+                        android:layout_marginStart="55dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/checkbox_rounded"
+                        android:button="@null" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_roundedEigth"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_below="@id/checkbox_roundedSeven"
+                        android:layout_marginStart="55dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/checkbox_rounded"
+                        android:button="@null" />
+
+                    <CheckBox
+                        android:id="@+id/checkboxNine"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_below="@id/checkbox_roundedEigth"
+                        android:layout_marginStart="55dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/checkbox_rounded"
+                        android:button="@null" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_back"
+                        style="@style/style_btnBorderPurpleSmall"
+                        android:layout_below="@+id/checkboxNine"
+                        android:layout_marginStart="60dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/db_btn_border"
+                        android:text="@string/txt_back" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_go_quiz"
+                        style="@style/style_btnYellowSmall"
+                        android:layout_below="@id/checkboxNine"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_toEndOf="@id/btn_back"
+                        android:background="@drawable/db_btn_solid"
+                        android:text="@string/txt_quiz_finish" />
+
+
+                </RelativeLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/fg_menu"
+        class="com.educa.ui.fragments.FragmentMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

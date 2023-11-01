@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".ui.fragments.FragmentAnswer">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:id="@+id/sv_body"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:verticalScrollbarPosition="left">
+
+            <TextView
+                android:id="@+id/answerBody"
+                style="@style/style_text"
+                android:layout_width="285dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:text="@string/txt_body_answer" />
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/icons"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="bottom"
+            android:visibility="invisible">
+
+            <ImageButton
+                android:id="@+id/edit_content"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="2dp"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/edit" />
+
+            <ImageButton
+                android:id="@+id/delete_content"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="35dp"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/bin" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/sv_body"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/darker_gray" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF626262"
+    android:orientation="vertical"
+    tools:context=".ui.fragments.FragmentModalDelete">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/db_container_solid"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/style_bigTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/txt_the_is_sure" />
+
+        <TextView
+            android:id="@+id/tv_topicBody"
+            style="@style/style_subText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/txt_all_info_deleted" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_back"
+                style="@style/style_btnBorderBlackSmall"
+                android:layout_toStartOf="@id/btn_deleteTopic"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/db_btn_border"
+                android:text="@string/txt_no" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_deleteTopic"
+                style="@style/style_btnPinkSmall"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/db_btn_solid"
+                android:text="@string/txt_confirm_delete" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

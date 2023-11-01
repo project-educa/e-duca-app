@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#f5f5f5</color>
+    <color name="black">#252525</color>
+    <color name="grey">#e5e5e5</color>
+    <color name="grey600">#8D8D99</color>
+
+    <color name="purple900">#45006B</color>
+    <color name="purple800">#550084</color>
+    <color name="purple500">#6c0ba2</color>
+    <color name="purple400">#784c9e</color>
+    <color name="purple300">#9813e1</color>
+    <color name="purple200">#830ac6</color>
+    <color name="purple100">#ba3eff</color>
+    <color name="purple90">#C9BBFF</color>
+
+
+    <color name="pink800">#8c0076</color>
+    <color name="pink600">#ac0391</color>
+    <color name="pink550">#D70091</color>
+    <color name="pink500">#cd00ad</color>
+    <color name="pink400">#e408c1</color>
+    <color name="pink300">#ff33df</color>
+    <color name="pink200">#fbe3f7</color>
+
+    <color name="blue800">#000e88</color>
+    <color name="blue600">#1524a7</color>
+    <color name="blue400">#203fe2</color>
+    <color name="blue500">#2315ca</color>
+    <color name="blue300">#4a7dff</color>
+    <color name="blue200">#8cd7f8</color>
+
+    <color name="yellow800">#c67700</color>
+    <color name="yellow600">#ebc301</color>
+    <color name="yellow400">#fde400</color>
+    <color name="yellow500">#ffd300</color>
+    <color name="yellow300">#fff433</color>
+</resources>

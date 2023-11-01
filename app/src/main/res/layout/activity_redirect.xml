@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Redirect">
+
+
+    <LinearLayout
+        android:id="@+id/container_top"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/header_small"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@mipmap/logo_medium" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_redirect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_redirect"
+            android:layout_width="wrap_content"
+            android:layout_height="314dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="198dp"
+            android:background="@drawable/redirect" />
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:id="@+id/txt_ops"
+            style="@style/style_subText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_redirect"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:textSize="24dp"
+            android:text="@string/txt_ops"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/restTextOps"
+            style="@style/style_subText"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_ops"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:text="@string/txt_restTextOps"
+            android:textColor="@color/black" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_access_navigation"
+            style="@style/style_btnBorderPurpleLarger"
+            android:layout_below="@id/restTextOps"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="48dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/db_btn_border"
+            android:text="@string/txt_access_navigation" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_back_sign"
+            style="@style/style_btnYellowLarger"
+            android:layout_below="@+id/btn_access_navigation"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/db_btn_solid"
+            android:text="@string/txt_back_sign" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

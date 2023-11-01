@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".ui.fragments.FragmentCardTopicNoEdit">
+
+
+    <RelativeLayout
+        android:id="@+id/card_contentEdit"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/db_card_rectangle"
+        android:elevation="5dp">
+
+        <View
+            android:id="@+id/border_side"
+            android:layout_width="6dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="0.7dp"
+            android:background="@drawable/db_border_side" />
+
+        <RelativeLayout
+            android:id="@+id/linear_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/style_text"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:text="@string/title_questions"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/description"
+                style="@style/style_textXXSmall"
+                android:layout_width="240dp"
+                android:layout_height="55dp"
+                android:layout_below="@+id/title"
+                android:layout_marginBottom="7dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/txt_body_question"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txt_postedAt"
+                style="@style/style_textXXSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/description"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/txt_date_question"
+                android:textColor="#B1B1B1" />
+
+            <TextView
+                android:id="@+id/txt_nameStudent"
+                style="@style/style_textXXSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/description"
+                android:layout_toEndOf="@+id/txt_postedAt"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/txt_question_name"
+                android:textColor="@color/pink550" />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/answers"
+            style="@style/style_textXSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/txt_qty_answer"
+            android:textColor="@color/pink550" />
+    </RelativeLayout>
+
+</FrameLayout>
