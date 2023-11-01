@@ -33,3 +33,4 @@ As aplicação é hospedada na AWS. O app se comunica com a API das aplicação 
 # e-duca-app
 # educa-app
 # educa-app
+# educa-app
